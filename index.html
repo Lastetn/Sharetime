@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Test Interface</title>
+  <style>
+    body {
+      font-family: Arial;
+      padding: 20px;
+    }
+
+    .card {
+      background: #f2f2f2;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    button {
+      padding: 10px 15px;
+      border: none;
+      background: #4a6cf7;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  </style>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+  <h2>Interface de test</h2>
+
+  <div class="card">
+    <p>Ceci est une carte simple.</p>
+    <button onclick="alert('Bouton cliqué')">Clique-moi</button>
+  </div>
+
+  <script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js");
+  }
+  </script>
+</body>
+</html>
