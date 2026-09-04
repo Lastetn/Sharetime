@@ -2,7 +2,7 @@
 self.addEventListener("install", (event) => {
   self.skipWaiting(); // active immédiatement
   event.waitUntil(
-    caches.open("v1").then((cache) => {
+    caches.open("v2").then((cache) => {
       return cache.addAll([
         "./index.html",
         "./manifest.json",
