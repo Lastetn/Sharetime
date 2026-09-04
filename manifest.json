@@ -1,7 +1,7 @@
 
 {
-  "name": "Test Interface",
-  "short_name": "TestApp",
+  "name": "Sharetime",
+  "short_name": "ShrTm",
   "start_url": "/Sharetime/",
   "display": "standalone",
   "background_color": "#ffffff",
